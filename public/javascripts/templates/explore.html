@@ -1,0 +1,63 @@
+<div id="tracks-slider">
+	<h4>Hyped Tracks</h4>
+	<div id="slide-buttons">
+		<div class="prev"><i class="icon-left-circle"></i></div>
+		<div class="next"><i class="icon-right-circle"></i></div>
+	</div>
+	{{#if hypedtracks}}
+	<ul id="tracks-list">
+		{{#each hypedtracks}}
+		<li>
+			<div id="thumb"><img src="{{mediumImage}}"></div>
+			<div id="track">
+				<div id="title">{{name}}</div>
+				<div id="artist"><a href="#">{{artist.name}}</a></div>
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+	{{/if}}
+</div>
+
+<div id="artists-slider">
+	<div id="hyped-artists">
+		<h4>Hyped Artists</h4>
+		<div id="slide-buttons">
+			<div class="prev"><i class="icon-left-circle"></i></div>
+			<div class="next"><i class="icon-right-circle"></i></div>
+		</div>
+	{{#if hypedartists}}
+	<ul id="artists-list">
+		{{#each hypedartists}}
+		<li>
+			<div id="thumb"><img src="{{bigImage}}"></div>
+			<div id="artist">
+				<div id="title"><a href="#">{{name}}</a></div>
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+	{{/if}}
+	</div>
+</div>
+
+<div id="loved-slider">
+	<h2><i class="icon-heart"></i>Tracks We Loved</h2>
+	<div id="slide-buttons">
+		<div class="prev"><i class="icon-left-circle"></i></div>
+		<div class="next"><i class="icon-right-circle"></i></div>
+	</div>
+	{{#if lovedtracks}}
+	<ul id="tracks-list">
+		{{#each lovedtracks}}
+		<li data-mbid="{{mbid}}">
+			<div id="thumb"><img src="{{mediumImage}}"></div>
+			<div id="track">
+				<div id="title">{{name}}</div>
+				<div id="artist"><a href="#">{{artist.name}}</a></div>
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+	{{/if}}
+</div>

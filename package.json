@@ -1,0 +1,28 @@
+{
+  "name": "Mybeast",
+  "version": "0.0.1",
+  "description": "Music discovery platform",
+  "main": "app.js",
+  "dependencies": {
+    "cache2file": "~0.2.1",
+    "connect-auth": "~0.5.3",
+    "ejs": "~0.8.2",
+    "ejs-locals": "~0.1.5",
+    "express": "~3.0.0rc4",
+    "less-middleware": "~0.1.5",
+    "request": "~2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aniss/Mybeast.git"
+  },
+  "author": "Aniss Bouraba",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/aniss/Mybeast/issues"
+  }
+}
